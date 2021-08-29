@@ -1,0 +1,39 @@
+// 頁面中 卷軸式導覽列
+.nav-scroller {
+    overflow-y: hidden; 
+    cursor: grab;
+    .nav{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        // hover 滑入效果
+        &-item{
+            position: relative;
+            &::after{
+                content: "";
+                width: 0;
+                height: 1px;
+                background: $secondary;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transition: all .3s ease-in-out;
+            }
+            &:hover::after{
+                left: 0%;
+                width: 100%;
+            }
+        }
+        // 下方卷軸
+        &::-webkit-scrollbar{
+            border-radius: 2px;
+            height: 2px;
+            background-color: $white;
+        }
+        &::-webkit-scrollbar-thumb{
+            height: 1px;
+            border-radius: 1px;
+            background-color: $secondary;
+        }
+    }
+}

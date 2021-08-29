@@ -1,0 +1,39 @@
+// 本專案尺寸
+.h-350{
+    height: 350px;
+}
+
+.h-400{
+    height: 400px;
+}
+
+.min-h-460{
+    min-height: 460px;
+}
+
+.min-h-lg-480{
+    @media (min-width: 992px) { 
+        min-height: 480px;
+    }
+}
+
+.w-350{
+    width: 350px;
+}
+
+/* Width 寬度設定 */
+@each $w, $w-value in $width-base {
+    .w-#{$w}{
+        width: $w-value;
+    }
+}
+
+@each $w, $w-value in $width-base {
+    @each $rwd in $rwd-reakpoints {
+        @media (min-width:map-get($rwd-reakpoint-base, $rwd)) {
+            .w-#{$rwd}-#{$w}{
+                width: $w-value;
+            }
+        }
+    }
+}

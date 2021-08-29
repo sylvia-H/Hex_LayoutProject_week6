@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
   },
   autoplay: {
     delay: 1800,
-    disableOnInteraction: false
+    disableOnInteraction: true
   }
 });
 //# sourceMappingURL=all.js.map

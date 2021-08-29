@@ -9,9 +9,13 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30
     }
   },
+  loop: true,
+  initialSlide: 1,
+  grabCursor: true,
   autoplay: {
-    delay: 1800,
-    disableOnInteraction: true
+    delay: 1600,
+    disableOnInteraction: false,
+    reverseDirection: true
   }
 });
 //# sourceMappingURL=all.js.map

@@ -1,4 +1,7 @@
 const swiper = new Swiper(".swiper-container", {
+  // 添加 observe 參數進行自動初始化
+  observer:true,
+  observeParents:true,
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 15,

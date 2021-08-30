@@ -1,4 +1,8 @@
 // 本專案尺寸
+.h-84{
+    height: 84px;
+}
+
 .h-256{
     height: 256px;
 }
@@ -23,6 +27,10 @@
     @media (min-width: 992px) { 
         min-height: 480px;
     }
+}
+
+.w-100px{
+    width: 100px;
 }
 
 .w-350{

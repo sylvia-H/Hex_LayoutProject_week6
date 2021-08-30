@@ -5,12 +5,15 @@ var swiper = new Swiper(".swiper-container", {
   slidesPerView: 'auto',
   spaceBetween: 15,
   grabCursor: true,
-  initialSlide: 1,
   breakpoints: {
     768: {
       slidesPerView: 3,
       spaceBetween: 30
     }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
   },
   autoplay: {
     delay: 1600

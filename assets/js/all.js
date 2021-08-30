@@ -1,6 +1,6 @@
 "use strict";
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper-container", {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 15,

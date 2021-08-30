@@ -87380,6 +87380,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   height: 25px;
 }
 
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
 /* Components */
 .offcanvas-end {
   top: 74px;

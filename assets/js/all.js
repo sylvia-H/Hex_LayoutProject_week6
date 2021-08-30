@@ -1,21 +1,19 @@
 "use strict";
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  initialSlide: 1,
+  grabCursor: true,
   breakpoints: {
     768: {
       slidesPerView: 3,
       spaceBetween: 30
     }
   },
-  loop: true,
-  initialSlide: 1,
-  grabCursor: true,
   autoplay: {
-    delay: 1600,
-    disableOnInteraction: false,
-    reverseDirection: true
+    delay: 1600
   }
 });
 //# sourceMappingURL=all.js.map
